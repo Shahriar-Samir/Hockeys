@@ -24,7 +24,8 @@
               colors: {
                 clifford: '#da373d',
                 'prime-color': '#FF4240',
-                'second-color': '#13131899'
+                'second-color': '#13131899',
+                'hover-button': '#973b3a'
               }
             }
           }
@@ -75,29 +76,67 @@
     </div>
     <div class="navbar-end">
         <i class="fa-solid fa-magnifying-glass text-gray-400 me-6 hidden lg:inline"></i>
-        <a class="bg-prime-color text-white text-lg lg:text-xl px-3 py-2 md:px-6 md:py-4 rounded-lg">Get Ticket</a>
+        <a class="bg-prime-color text-white text-lg lg:text-xl px-3 py-2 md:px-6 md:py-4 rounded-lg cursor-pointer hover:bg-hover-button">Get Ticket</a>
     </div>
       </div></nav>
      <!-- navbar ends here -->
     <!-- banner section starts here -->
     <section class="mt-7 lg:mt-14 relative">
-        <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full">
-              <img src="./Images/1.png" class="w-full" />
-              <div class="p-8 hidden lg:block bg-black text-white rounded-2xl absolute bottom-8 right-8">
-                <h1 class="font-extrabold text-2xl text-white ">Meet all the heroes from the field</h1>
-                <p class="mt-2 lg:mt-4 max-w-[600px] text-white text-opacity-60">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-          </div>
+        <div class="carousel w-full lg:h-[550px] relative">
+
+          <!-- slide 1 starts here-->
+          <div id="slide1" class="carousel-item relative w-full flex flex-col lg:block">
+            <div class="relative">
+              <img src="./Images/slide1.png" class="w-full object-cover h-[250px] lg:h-[550px]" />
               <div class="absolute flex justify-center gap-4 left-1/2 bottom-1/3 -translate-x-1/2 -translate-y-1/2 lg:-translate-y-0 lg:translate-x-0 lg:left-8 lg:bottom-8">
-                <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a> 
                 <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
               </div>
-            </div> 
-          </div>
-          <div class="p-4 lg:p-8 bg-black text-white mt-4 rounded-2xl lg:hidden">
-            <h1 class="font-extrabold text-2xl text-white ">Meet all the heroes from the field</h1>
-            <p class="mt-2 lg:mt-4 max-w-[600px] text-white text-opacity-60">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-      </div>
+            </div>
+            <div class="p-8 bg-black text-white rounded-2xl mt-5 lg:mt-0 lg:absolute lg:bottom-8 lg:right-8">
+              <h1 class="font-extrabold text-2xl text-white ">Meet all the heroes from the field</h1>
+              <p class="mt-2 lg:mt-4 max-w-[600px] text-white text-opacity-60">Enjoy the match with all of your favorite players in the gallery</p>
+            </div>
+           
+          </div> 
+          <!-- slide 1 ends here -->
+          <!-- slide 2 starts here-->
+          <div id="slide2" class="carousel-item relative w-full flex flex-col lg:block">
+            <div class="relative">
+              <img src="./Images/slide2.jpg" class="w-full object-cover h-[250px] lg:h-[550px]" />
+              <div class="absolute flex justify-center gap-4 left-1/2 bottom-1/3 -translate-x-1/2 -translate-y-1/2 lg:-translate-y-0 lg:translate-x-0 lg:left-8 lg:bottom-8">
+                <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div>
+            <div class="p-8 bg-black text-white rounded-2xl mt-5 lg:mt-0 lg:absolute lg:bottom-8 lg:right-8">
+              <h1 class="font-extrabold text-2xl text-white ">Get hyped for the winter matches!</h1>
+              <p class="mt-2 lg:mt-4 max-w-[600px] text-white text-opacity-60">New winter matches are here to make you exicted as you will see the players playing in the snowy field</p>
+            </div>
+           
+          </div> 
+          <!-- slide 2 ends here -->
+
+          <!-- slide 3 starts here-->
+          <div id="slide3" class="carousel-item relative w-full flex flex-col lg:block">
+            <div class="relative">
+              <img src="./Images/slide3.jpg" class="w-full object-cover h-[250px] lg:h-[550px]" />
+              <div class="absolute flex justify-center gap-4 left-1/2 bottom-1/3 -translate-x-1/2 -translate-y-1/2 lg:-translate-y-0 lg:translate-x-0 lg:left-8 lg:bottom-8">
+                <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+              </div>
+            </div>
+            <div class="p-8 bg-black text-white rounded-2xl mt-5 lg:mt-0 lg:absolute lg:bottom-8 lg:right-8">
+              <h1 class="font-extrabold text-2xl text-white ">Want to become a hero ?</h1>
+              <p class="mt-2 lg:mt-4 max-w-[600px] text-white text-opacity-60">We are announcing a new opportunity to help you become a future hockey player. Join our beginner hockey course now!</p>
+            </div>
+           
+          </div> 
+          <!-- slide 3 ends here -->
+
+      
+        </div>
+       
     </section>
     <!-- banner section ends here -->
 
@@ -105,12 +144,12 @@
 <!-- header part ends here -->
 
 <!-- main part starts here -->
-<main class="mt-24 container w-11/12 mx-auto">
+<main class="mt-10 lg:mt-24 container w-11/12 mx-auto">
     <!-- professional hockey's club section starts here -->
     <section>
         <div class="border-t-4 border-b-4  py-8 border-dashed border-gray-800 border-opacity-20">
-            <h1 class="text-2xl lg:text-3xl font-extrabold text-center">Professional Hockeys Club</h1>
-            <p class="mt-6 text-base font-medium text-second-color max-w-[607px] mx-auto text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            <h1 class="text-2xl lg:text-3xl font-extrabold text-center">Professional Hockey Clubs</h1>
+            <p class="mt-6 text-base font-medium text-second-color max-w-[607px] mx-auto text-center">We have a strong network with many professional hockey clubs, providing excellent facilities, training, and other exceptional services.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12">
 
@@ -121,7 +160,7 @@
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title text-xl font-semibold">Prayer Facility</h2>
-                <p class="text-base font-normal text-second-color max-w-[250px]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                <p class="text-base font-normal text-second-color max-w-[250px]">We provide breaks during prayer times</p>
               </div>
             </div>
         <!-- progressbar 1 -->
@@ -133,7 +172,7 @@
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title text-xl font-semibold">Experienced Coach</h2>
-                <p class="text-base font-normal text-second-color max-w-[250px]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                <p class="text-base font-normal text-second-color max-w-[250px]">Experienced and talented coach will train you to become a hero.</p>
               </div>
             </div>
         <!-- progressbar 2 -->
@@ -146,7 +185,7 @@
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title text-xl font-semibold">Senior Player</h2>
-                <p class="text-base font-normal text-second-color max-w-[250px]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                <p class="text-base font-normal text-second-color max-w-[250px]">You will always have senior players with you from whom you can learn and receive guidance.</p>
               </div>
             </div>
         <!-- progressbar 3 -->
@@ -158,7 +197,7 @@
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title text-xl font-semibold">Training Ground</h2>
-                <p class="text-base font-normal text-second-color max-w-[250px]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                <p class="text-base font-normal text-second-color max-w-[250px]">You will have access to the best training ground for playing and practicing.</p>
               </div>
             </div>
         <!-- progressbar 4 -->
@@ -171,7 +210,7 @@
     <section class="mt-24">
           <div class="border-t-4 border-b-4  py-8 border-dashed border-gray-800 border-opacity-20">
               <h1 class="text-center text-2xl md:text-3xl font-extrabold">Program Sections</h1>
-              <p class="mt-6 text-base font-medium text-second-color max-w-[607px] mx-auto text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+              <p class="mt-6 text-base font-medium text-second-color max-w-[607px] mx-auto text-center">From amateur to professional, we are announcing hockey programs to help you achieve your dream.</p>
           </div>
           <!-- program 1 starts here -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-12">
@@ -180,9 +219,8 @@
                     <div class="absolute bg-gray-800 opacity-50 z-10 top-0 left-0 w-full h-full rounded-2xl"></div>
                     <div class="absolute z-20 left-1/2 -bottom-1/4 -translate-x-1/2 -translate-y-1/2  text-white sm:left-10 sm:bottom-10 sm:translate-x-0 sm:translate-y-0 ">
                       <h1 class="text-xl font-extrabold">Junior Program</h1>
-                      <p class="mt-4 w-72 font-medium text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-                        <button class="bg-prime-color text-white px-6 py-2 rounded-lg mt-5 lg:mt-9">Register Now!</button>
+                      <p class="mt-4 w-72 font-medium text-sm">At this beginner course, we will guide you through the baby steps of the hockey world and transform you into a beginner hero</p>
+                        <button class="bg-prime-color text-white px-6 py-2 rounded-lg mt-5 lg:mt-9 hover:bg-hover-button">Register Now!</button>
                     </div>
                 </div>
                 <!-- program 1 ends here -->
@@ -193,9 +231,8 @@
                     <div class="absolute bg-gray-800 opacity-50 z-10 top-0 left-0 w-full h-full rounded-2xl"></div>
                     <div class="absolute z-20 left-1/2 -bottom-1/4 -translate-x-1/2 -translate-y-1/2  text-white sm:left-10 sm:bottom-10 sm:translate-x-0 sm:translate-y-0 ">
                       <h1 class="text-xl font-extrabold">Teenager Program</h1>
-                      <p class="mt-4 w-72 font-medium text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-                        <button class="bg-prime-color text-white px-6 py-2 rounded-lg mt-5 lg:mt-9">Register Now!</button>
+                      <p class="mt-4 w-72 font-medium text-sm">This program is designed for the junior heroes of the hockey world, where we will guide you to the door of the professional hockey world.</p>
+                        <button class="bg-prime-color text-white px-6 py-2 rounded-lg mt-5 lg:mt-9 hover:bg-hover-button">Register Now!</button>
                     </div>
                 </div>
                 <!-- program 2 ends here -->
@@ -206,9 +243,8 @@
                     <div class="absolute bg-gray-800 opacity-50 z-10 top-0 left-0 w-full h-full rounded-2xl"></div>
                     <div class="absolute z-20 left-1/2 -bottom-1/4 -translate-x-1/2 -translate-y-1/2  text-white sm:left-10 sm:bottom-10 sm:translate-x-0 sm:translate-y-0 ">
                       <h1 class="text-xl font-extrabold">Professional Program</h1>
-                      <p class="mt-4 w-72 font-medium text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
-                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
-                        <button class="bg-prime-color text-white px-6 py-2 rounded-lg mt-5 lg:mt-9">Register Now!</button>
+                      <p class="mt-4 w-72 font-medium text-sm">It's time to become a real-world professional hockey hero. The opportunity for you to be a hero is knocking at the door</p>
+                        <button class="bg-prime-color text-white px-6 py-2 rounded-lg mt-5 lg:mt-9 hover:bg-hover-button">Register Now!</button>
                     </div>
                 </div>
                   <!-- program 3 ends here -->
@@ -220,7 +256,7 @@
     <section class="mt-24">
         <div class="border-t-4 border-b-4  py-8 border-dashed border-gray-800 border-opacity-20">
         <h1 class="text-center text-2xl md:text-3xl font-extrabold">Our New Products</h1>
-        <p class="mt-6 text-base font-medium text-second-color max-w-[607px] mx-auto text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <p class="mt-6 text-base font-medium text-second-color max-w-[607px] mx-auto text-center">Here are some of our latest products that we are currently offering.</p>
        </div>
        <div class="mt-6 md:mt-12 grid md:grid-cols-2 gap-6">
         <!-- product 1 -->
@@ -244,8 +280,8 @@
                   <p>200</p>
                 </div>
               </div>
-              <h1 class="text-xl mt-3 font-bold">World Cup Flags Football</h1>
-              <p class="mt-1 mb-4 text-second-color font-medium text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+              <h1 class="text-xl mt-3 font-bold">Club's Jacket</h1>
+              <p class="mt-1 mb-4 text-second-color font-medium text-base">Get our professional hockey club's jacket</p>
               <div class="flex items-center gap-5">
                     <h1 class="text-lg text-prime-color font-extrabold">Price - $22.00</h1>
                     <div class="flex items-center gap-2">
@@ -278,8 +314,8 @@
                   <p>200</p>
                 </div>
               </div>
-              <h1 class="text-xl mt-3 font-bold">World Cup Flags Football</h1>
-              <p class="mt-1 mb-4 text-second-color font-medium text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+              <h1 class="text-xl mt-3 font-bold">Eagle's head football</h1>
+              <p class="mt-1 mb-4 text-second-color font-medium text-base">Football with eagle's head</p>
               <div class="flex items-center gap-5">
                     <h1 class="text-lg text-prime-color font-extrabold">Price - $22.00</h1>
                     <div class="flex items-center gap-2">
@@ -313,7 +349,7 @@
                 </div>
               </div>
               <h1 class="text-xl mt-3 font-bold">Cap For Hockeys</h1>
-              <p class="mt-1 mb-4 text-second-color font-medium text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+              <p class="mt-1 mb-4 text-second-color font-medium text-base">Caps for the hockey players</p>
               <div class="flex items-center gap-5">
                     <h1 class="text-lg text-prime-color font-extrabold">Price - $22.00</h1>
                     <div class="flex items-center gap-2">
@@ -347,7 +383,7 @@
                 </div>
               </div>
               <h1 class="text-xl mt-3 font-bold">World Cup Flags Football</h1>
-              <p class="mt-1 mb-4 text-second-color font-medium text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+              <p class="mt-1 mb-4 text-second-color font-medium text-base">Get the new football world cup shirt</p>
               <div class="flex items-center gap-5">
                     <h1 class="text-lg text-prime-color font-extrabold">Price - $22.00</h1>
                     <div class="flex items-center gap-2">
@@ -380,8 +416,8 @@
                   <p>200</p>
                 </div>
               </div>
-              <h1 class="text-xl mt-3 font-bold">World Cup Flags Football</h1>
-              <p class="mt-1 mb-4 text-second-color font-medium text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+              <h1 class="text-xl mt-3 font-bold">Hockey Helmet</h1>
+              <p class="mt-1 mb-4 text-second-color font-medium text-base">Strong hockey helmet to protect your head</p>
               <div class="flex items-center gap-5">
                     <h1 class="text-lg text-prime-color font-extrabold">Price - $22.00</h1>
                     <div class="flex items-center gap-2">
@@ -414,8 +450,8 @@
                   <p>200</p>
                 </div>
               </div>
-              <h1 class="text-xl mt-3 font-bold">World Cup Flags Football</h1>
-              <p class="mt-1 mb-4 text-second-color font-medium text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+              <h1 class="text-xl mt-3 font-bold">World Cup Football</h1>
+              <p class="mt-1 mb-4 text-second-color font-medium text-base">New world cup football</p>
               <div class="flex items-center gap-5">
                     <h1 class="text-lg text-prime-color font-extrabold">Price - $22.00</h1>
                     <div class="flex items-center gap-2">
@@ -435,7 +471,7 @@
     <section class="mt-24">
       <div class="border-t-4 border-b-4  py-8 border-dashed border-gray-800 border-opacity-20">
         <h1 class="text-center text-2xl md:text-3xl font-extrabold">Clients Question</h1>
-        <p class="mt-6 text-base font-medium text-second-color max-w-[607px] mx-auto text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <p class="mt-6 text-base font-medium text-second-color max-w-[607px] mx-auto text-center">We have provided the most frequently asked questions from people here.</p>
        </div>
        <div class="mt-12">
         <div class="flex items-center md:items-start flex-col md:flex-row gap-10 p-8 rounded-2xl border-gray-800 border-opacity-20 border-2">
@@ -447,7 +483,7 @@
                   Our Equipment
                 </div>
                 <div class="collapse-content text-base font-normal text-second-color"> 
-                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                  <p>We provide all the hockey gear, including hockey sticks, skates, helmets, gloves, and more.</p>
                 </div>
               </div>
               
@@ -457,7 +493,7 @@
                   Hockey Training
                 </div>
                 <div class="collapse-content text-base font-normal text-second-color"> 
-                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                  <p>To ensure the best training experience, we offer both high-quality training grounds and equipments, accompanied by experienced trainers.</p>
                 </div>
               </div>
               
@@ -467,7 +503,7 @@
                   Private Lessons
                 </div>
                 <div class="collapse-content text-base font-normal text-second-color"> 
-                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                  <p>Private lessons are available to provide you with personal instructions and additional training to help you achieve your dreams.</p>
                 </div>
               </div>
               
@@ -477,7 +513,7 @@
                   Ski Touring
                 </div>
                 <div class="collapse-content text-base font-normal text-second-color"> 
-                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                  <p>We provide the opportunity for a ski tour to help you experience the thrill of adventure and become a real-life hero in the mountains.</p>
                 </div>
               </div>
               
@@ -487,7 +523,7 @@
                   Booking
                 </div>
                 <div class="collapse-content text-base font-normal text-second-color"> 
-                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                  <p>You can pre-book for the programs before the official enrollment period begins.</p>
                 </div>
               </div>
               
@@ -497,7 +533,7 @@
                   Pricings
                 </div>
                 <div class="collapse-content text-base font-normal text-second-color"> 
-                  <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                  <p>We offer you the opportunity to participate in our hockey program at affordable prices.</p>
                 </div>
               </div>             
           </div>    
@@ -509,9 +545,9 @@
     <section class="mt-24">
       <div class="border-t-4 border-b-4  py-8 border-dashed border-gray-800 border-opacity-20">
         <h1 class="text-center text-2xl md:text-3xl font-extrabold">Get In Touch</h1>
-        <p class="mt-6 text-base font-medium text-second-color max-w-[607px] mx-auto text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <p class="mt-6 text-base font-medium text-second-color max-w-[607px] mx-auto text-center">If you want to learn more, please contact us, or you can send us your message directly from the form below.</p>
       </div>
-      <div class="mt-12 flex flex-col items-center gap-6 lg:flex-row">
+      <div class="mt-12 flex flex-col items-center gap-6 md:flex-row">
           <div class="space-y-6 p-6 lg:p-12 border-gray-800 border-opacity-20 border-2 rounded-2xl w-full  lg:w-8/12">
                <div class="bg-[#BCED6D1A] p-8 pb-10">
                     <img src="./Images/Group 1171275317.png" alt="">
@@ -550,9 +586,9 @@
               </div>
               <div class="mt-6 h-[150px] lg:h-[350px]">
                 <label for="" class="font-bold text-xl">Message</label><br>
-                <textarea name="" id="" class="w-full h-full mt-4 font-normal text-base bg-[#13131805]"></textarea>
+                <textarea name="" id="" class="w-full h-full p-5 mt-4 font-normal text-base bg-[#13131805] " placeholder="Write your message"></textarea>
               </div>
-              <button class="py-4 px-6 text-xl font-bold w-full bg-prime-color rounded-xl text-white mt-16">Send Message</button>
+              <button class="py-4 px-6 text-xl font-bold w-full bg-prime-color rounded-xl text-white mt-16 hover:bg-hover-button">Send Message</button>
           </form>
       </div>
       <div class="flex flex-col items-center py-9  bg-[#13131805] mt-12">
@@ -573,7 +609,7 @@
   <footer class="mt-24 grid p-28 grid-cols-2 gap-10 bg-black text-white text-base-content lg:grid-cols-5 lg:gap-40">
     <aside class="flex flex-col items-center col-span-2 lg:col-span-2 lg:items-start">
       <p class="text-3xl font-extrabold text-center lg:text-start">Get In Touch</p>
-      <p class="max-w-[546px] text-[#FFFFFF99] text-center mt-4 lg:text-start">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+      <p class="max-w-[546px] text-[#FFFFFF99] text-center mt-4 lg:text-start">Contact us using the email or phone number provided below.</p>
       <p class="text-base font-medium"><i class="fa-regular fa-envelope text-prime-color me-2 mt-5"></i> hockeys@support.com</p>
       <p class="text-base font-medium"><i class="fa-solid fa-phone text-prime-color me-2 mt-5"></i> (+62) 123-321-543</p>
     </aside> 
